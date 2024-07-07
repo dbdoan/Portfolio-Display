@@ -5,11 +5,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, "Helvetica", sans-serif;
-    /* justify-content: center; */
     margin: 0;
     min-height: 100vh;
     padding: 0;
-
 }
 
 /* ///////////////////////////////////////////////// */
@@ -36,25 +34,19 @@ body {
 
 .icons {
     display: flex;
-    /* justify-content: space-around; */
     gap: 5px;
     width: 100%;
 
 }
 
 /* ///////////////////////////////////////////////// */
-
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .description {
         font-size: 16px;
     }
-    
+
     .icons img {
         height: 40px;
     }
-
-    /* .name {
-        height: 50px;
-    } */
 }
