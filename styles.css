@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, "Helvetica", sans-serif;
+    /* justify-content: center; */
     margin: 0;
     min-height: 100vh;
     padding: 0;
@@ -27,12 +28,14 @@ body {
 }
 
 .description {
+    /* text-align: center; */
     font-size: 20px;
     margin-top: 0px;
     width: 100%;
 }
 
 .icons {
+    /* justify-content: center; */
     display: flex;
     gap: 5px;
     margin-top: -5px;
