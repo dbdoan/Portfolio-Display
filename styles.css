@@ -22,7 +22,7 @@ body {
 }
 
 .name {
-    margin-bottom: -20px;
+    margin-bottom: -30px;
     width: 100%;
 }
 
@@ -35,6 +35,7 @@ body {
 .icons {
     display: flex;
     gap: 5px;
+    margin-top: -5px;
     width: 100%;
 
 }
