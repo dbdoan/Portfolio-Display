@@ -8,6 +8,36 @@ body {
 }
 
 /* ///////////////////////////////////////////////// */
+/* introduction header */
+
+.name {
+    display: flex;
+}
+
+#hello {
+    display: inline;
+    padding-right: 5px;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    0% { border-color: white; }
+    50% { border-color: transparent; }
+    100% { border-color: white; }
+}
+
+.no-blink {
+    border-right: 2px solid white;
+}
+
+.blink {
+    border-right: 2px solid white;
+    animation: blink 0.7s step-end infinite;
+}
+
+/* ///////////////////////////////////////////////// */
+/* Introduction container */
+
 .introduction {
     display: flex;
     justify-content: center;
@@ -15,12 +45,9 @@ body {
 
 .header {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     max-width: 700px;
     padding: 20px;
     width: 100%;
-
 }
 
 .name {
@@ -51,32 +78,42 @@ body {
 }
 
 /* ///////////////////////////////////////////////// */
-.projects-display {
+/* Showcase container */
+
+.projects-display { 
     display: flex;
     justify-content: center;
 }
 
 .project-header {
     box-sizing: border-box;
+    flex-direction: column;
     max-width: 700px;
     padding: 20px;
     width: 100%;
-
 }
 
-/* ///////////////////////////////////////////////// */
-
+#showcase {
+    margin-bottom: 0px;
+}
 
 .inner-block {
     background-color: white;
+    border-radius: 5px;
     box-sizing: border-box;
+    height: 100%;
+    cursor: pointer;
     margin-top: 20px;
     max-width: 700px;
     padding: 25px;
     opacity: 0.5;
-    height: 100%;
     width: 100%;
 }
+
+.button-text {
+    font-size: 20px;
+}
+/* ///////////////////////////////////////////////// */
 
 /* ///////////////////////////////////////////////// */
 /* Responsive adjustments */
