@@ -1,5 +1,3 @@
-import config from './config.js';
-
 document.addEventListener('DOMContentLoaded', () => {
     // Debug: Verify DOMContentLoaded event
     console.log('DOMContentLoaded event triggered'); 
@@ -7,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchData() {
-    const url = window.STRAPI_URL; // Use the injected STRAPI_URL
+    const url = window.STRAPI_URL || window.config.STRAPI_URL; // Use the injected STRAPI_URL or the one from config.js for local testing
 
     fetch(url)
         .then(response => {
