@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Debug: Verify DOMContentLoaded event
     console.log('DOMContentLoaded event triggered'); 
-    fetchData();
+    // Add a short delay to ensure config.js is fully loaded
+    setTimeout(fetchData, 100); 
 });
 
 function fetchData() {
     const url = window.config.baseURL; // Use the injected baseURL from config.js
+    console.log('Using baseURL:', url); // Debugging
 
     fetch(url)
         .then(response => {
@@ -17,7 +19,7 @@ function fetchData() {
             return response.json();
         })
         .then(json => {
-             // Debug: Log the entire JSON response
+            // Debug: Log the entire JSON response
             console.log('JSON data:', json);
             if (json.data && Array.isArray(json.data)) {
                 // Access the `data` array directly
