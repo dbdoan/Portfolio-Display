@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchData() {
-    const url = 'https://strapi.dbdoan.xyz/api/projects'; // Use the secure URL for Strapi
+    const url = 'https://strapi.dbdoan.xyz/api/projects';
 
     fetch(url)
         .then(response => {
