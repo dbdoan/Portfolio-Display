@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Debug: Verify DOMContentLoaded event
     console.log('DOMContentLoaded event triggered'); 
-    // Add a short delay to ensure config.js is fully loaded
-    setTimeout(fetchData, 100); 
+    fetchData();
 });
 
 function fetchData() {
-    const url = window.config.baseURL; // Use the injected baseURL from config.js
-    console.log('Using baseURL:', url); // Debugging
+    const url = 'https://strapi.dbdoan.xyz/api/projects'; // Use the secure URL for Strapi
 
     fetch(url)
         .then(response => {
