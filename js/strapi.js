@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchData() {
-    const url = window.STRAPI_URL; // Use the injected STRAPI_URL
+    const url = window.config.baseURL; // Use the injected baseURL from config.js
 
     fetch(url)
         .then(response => {
