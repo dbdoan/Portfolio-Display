@@ -47,7 +47,10 @@ function populateButtons(data) {
             if (button) {
                 button.querySelector('.button-text').textContent = project.project_name;
                 button.onclick = () => {
-                    window.location.href = project.link;
+                    const newWindow = window.open(project.link, '_blank', 'noopener,noreferrer');
+                    if (newWindow) {
+                        newWindow.opener = null;
+                    }
                 };
                 console.log(`Updated button ${index + 1} with project: ${project.project_name}`); // Debug: Verify button update
             } else {
