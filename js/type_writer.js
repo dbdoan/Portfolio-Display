@@ -6,7 +6,7 @@ var target_class = "hello"
 var output_text = 'hello, my name is danny.';
 
 // Speed of typing animation
-var typing_speed = 70;
+var typing_speed = 60;
 
 // Time in milliseconds to display cursor at the end
 var end_display_ms = 2000; 
@@ -23,9 +23,10 @@ function typeWriter() {
         document.getElementById(target_class).innerHTML = output_text.substring(0, i + 1);
 
         i++;
-
+        
         // Typing speed
         setTimeout(typeWriter, typing_speed);
+
     } else {
         // Remove the no-blink class once string is fully typed out
         document.getElementById(target_class).classList.remove("no-blink");

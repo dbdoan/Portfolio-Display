@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchData() {
+    // Reverse proxied Strapi server on VPS
     const url = 'https://strapi.dbdoan.xyz/api/projects';
 
     fetch(url)
@@ -52,7 +53,7 @@ function populateButtons(data) {
                         newWindow.opener = null;
                     }
                 };
-                console.log(`Updated button ${index + 1} with project: ${project.project_name}`); // Debug: Verify button update
+                console.log(`Updated button ${index + 1} with project: ${project.project_name}`);
             } else {
                 console.error(`Button with ID ${buttonId} not found`);
             }
