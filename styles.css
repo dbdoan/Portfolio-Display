@@ -105,8 +105,8 @@ body {
 }
 
 .inner-block {
-
-    background-color: #77c3fd;
+    background-color: rgba(119, 195, 253, 0.50);;
+    backdrop-filter: blur(10px);
     border-color: transparent;
     border-radius: 5px;
     box-sizing: border-box;
@@ -116,14 +116,13 @@ body {
     margin-top: 20px;
     max-width: 700px;
     padding: 15px;
-    opacity: 0.8;
     text-align: left;
     transition: background-color 0.3s;
     width: 100%;
 }
 
 .inner-block:hover {
-    background-color: rgb(42, 159, 249);
+    background-color: rgb(23, 127, 206);
 }
 
 .button-text {
