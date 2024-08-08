@@ -155,7 +155,7 @@ a {
 }
 
 /* ///////////////////////////////////////////////// */
-#python{
+#python {
     background-color: #4584b6;
     border-radius: 5px;
     color: #ffde57;
@@ -164,7 +164,7 @@ a {
     justify-content: center;
     margin-top: 5px;
     max-width: 50px;
-    padding: 5px 5px;
+    padding: 2px 2px;
     width: 100%;
 }
 
