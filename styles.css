@@ -155,15 +155,60 @@ a {
 }
 
 /* ///////////////////////////////////////////////// */
+.label {
+    display: flex;
+    justify-content: center;
+}
+
+.project-4-labels
+{
+    display: flex;
+    gap: 5px;
+}
+
 #python {
     background-color: #4584b6;
     border-radius: 5px;
     color: #ffde57;
-    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#html {
+    background-color: #e34c26;
+    border-radius: 5px;
+    color: #ebebeb;
     gap: 5px;
     justify-content: center;
     margin-top: 5px;
     max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#css {
+    background-color: #264de4;
+    border-radius: 5px;
+    color: #ebebeb;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+    max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#js {
+    background-color: #f0db4f;
+    border-radius: 5px;
+    color: #323330;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+    max-width: 90px;
     padding: 2px 2px;
     width: 100%;
 }
