@@ -158,6 +158,7 @@ a {
 .label {
     display: flex;
     justify-content: center;
+    margin-top: 8px;
 }
 
 .project-4-labels
@@ -171,7 +172,16 @@ a {
     border-radius: 5px;
     color: #ffde57;
     gap: 5px;
-    margin-top: 5px;
+    max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#empty {
+    background-color: black;
+    border-radius: 5px;
+    color: #ffde57;
+    gap: 5px;
     max-width: 50px;
     padding: 2px 2px;
     width: 100%;
@@ -183,7 +193,6 @@ a {
     color: #ebebeb;
     gap: 5px;
     justify-content: center;
-    margin-top: 5px;
     max-width: 50px;
     padding: 2px 2px;
     width: 100%;
@@ -195,7 +204,6 @@ a {
     color: #ebebeb;
     gap: 5px;
     justify-content: center;
-    margin-top: 5px;
     max-width: 50px;
     padding: 2px 2px;
     width: 100%;
@@ -207,7 +215,6 @@ a {
     color: #323330;
     gap: 5px;
     justify-content: center;
-    margin-top: 5px;
     max-width: 90px;
     padding: 2px 2px;
     width: 100%;
