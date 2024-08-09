@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #1B1C1E;
     color: white;
     display: flex;
     flex-direction: column;
@@ -160,21 +160,27 @@ a {
     margin-top: 8px;
 }
 
-.project-4-labels
-{
+.project-2-labels {
     display: flex;
     gap: 5px;
 }
 
-#python {
-    background-color: #4584b6;
-    border-radius: 5px;
-    color: #ffde57;
+.project-4-labels {
+    display: flex;
     gap: 5px;
+}
+
+#css {
+    background-color: #264de4;
+    border-radius: 5px;
+    color: #ebebeb;
+    gap: 5px;
+    justify-content: center;
     max-width: 50px;
     padding: 2px 2px;
     width: 100%;
 }
+
 
 #empty {
     background-color: black;
@@ -197,23 +203,43 @@ a {
     width: 100%;
 }
 
-#css {
-    background-color: #264de4;
-    border-radius: 5px;
-    color: #ebebeb;
-    gap: 5px;
-    justify-content: center;
-    max-width: 50px;
-    padding: 2px 2px;
-    width: 100%;
-}
-
 #js {
     background-color: #f0db4f;
     border-radius: 5px;
     color: #323330;
     gap: 5px;
     justify-content: center;
+    max-width: 90px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#python {
+    background-color: #4584b6;
+    border-radius: 5px;
+    color: #ffde57;
+    gap: 5px;
+    max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+
+#react {
+    background-color: #61DBFB;
+    border-radius: 5px;
+    color: #24272e;
+    gap: 5px;
+    max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#tailwindcss {
+    background-color: #06b6d4;
+    border-radius: 5px;
+    color: #6d28d9;
+    gap: 5px;
     max-width: 90px;
     padding: 2px 2px;
     width: 100%;
