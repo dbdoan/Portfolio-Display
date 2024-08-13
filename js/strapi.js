@@ -43,7 +43,7 @@ function populateButtons(data) {
             // Access the attributes of each project
             const project = item.attributes; 
             const buttonId = `project-${index + 1}`;
-            const button = document.getElementById(buttonId);
+            const button = document.querySelector(`#${buttonId}`);
 
             if (button) {
                 button.querySelector('.button-text').textContent = project.project_name;
