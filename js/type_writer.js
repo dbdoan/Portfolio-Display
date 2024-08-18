@@ -1,18 +1,18 @@
 // Reference: https://www.w3schools.com/howto/howto_js_typewriter.asp
 
-var target_class = "#hello"
+let target_class = "#hello"
 
 // Text output
-var output_text = 'hello, my name is danny.';
+let output_text = 'hello, my name is danny.';
 
 // Speed of typing animation
-var typing_speed = 60;
+let typing_speed = 60;
 
 // Time in milliseconds to display cursor at the end
-var end_display_ms = 2000; 
+let end_display_ms = 2000; 
 
 // Initialize character counter
-var i = 0;
+let i = 0;
 function typeWriter() {
 
     // While char count is less than total string length
