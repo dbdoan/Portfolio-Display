@@ -1,5 +1,8 @@
 body {
-    background-color: #1B1C1E;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(photos/houston.jpg);
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -215,7 +218,7 @@ a {
 }
 
 #python {
-    background-color: #4584b6;
+    background-color: #035faa;
     border-radius: 5px;
     color: #ffde57;
     gap: 5px;
