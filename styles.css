@@ -85,11 +85,31 @@ body {
 }
 
 /* ///////////////////////////////////////////////// */
+/* Clash */
+.clash-display {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.clash-header {
+    box-sizing: border-box;
+    max-width: 700px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ///////////////////////////////////////////////// */
 /* Showcase container */
 /* middle */
 
-.projects-display {
-    margin-top: -15px;
+.projects-display{
+    margin-top: -25px;
     display: flex;
     flex-grow: 1;
     justify-content: center;
