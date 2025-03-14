@@ -87,19 +87,62 @@
         </div>
     </div>
 
-    <!-- <div class="clash-display">
-        <div class="clash-header">
-            <h1 id="base">~ clash</h1>
-
-
+    <div class="hobbies-display">
+        <div class="hobbies-header">
+            <h1 id="base">~ interests</h1>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" id="hello-kitty">
+                    <img src="photos/plants.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="photos/family.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="Slide 2"> -->
+                     <img src="photos/clash.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <iframe
+                        src="https://www.youtube.com/embed/n_hLz1JFXTA?enablejsapi=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen>
+                    </iframe>
+                    
+                </div>
+        
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="footer">
         <div class="source"><a href="https://github.com/dbdoan/portfolio-website" target="_blank" rel="noreferrer">source</a></div>
     </div>
 
-    <script src="js/strapi.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script defer src="js/yt_controls.js"></script>
     <script src="js/type_writer.js"></script>
+    <script src="js/strapi.js"></script>
+    <script defer src="js/swiper.js"></script>
+
 </body>
 </html>
