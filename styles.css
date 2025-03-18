@@ -116,18 +116,25 @@ body {
     max-height: 420px;
 }
 
+.swiper-slide {
+    border-radius: 10px;
+    overflow: hidden; 
+    position: relative;
+}
+
 .swiper-slide img {
     width: 100%;
-    height: 100%;
+    /* height: 370px; */
+    /* height: 100%; */
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
 }
 
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
 }
 
 .video-container iframe {
@@ -271,6 +278,36 @@ a {
     max-width: 50px;
     padding: 2px 2px;
     width: 100%;
+}
+
+#plants {
+    background-color: rgba(50, 255, 84, 0.75);
+    border-radius: 5px;
+    color: #000000;
+    padding: 2px 4px;
+    position: absolute;
+    top: 5px;
+    left: 15px; 
+}
+
+#family {
+    background-color: rgba(0, 221, 255, 0.765);
+    border-radius: 5px;
+    color: #000000;
+    padding: 2px 4px;
+    position: absolute;
+    top: 5px;
+    left: 15px; 
+}
+
+#games {
+    background-color: rgba(255, 242, 0, 0.765);
+    border-radius: 5px;
+    color: #000000;
+    padding: 2px 4px;
+    position: absolute;
+    top: 5px;
+    left: 15px; 
 }
 
 #html {

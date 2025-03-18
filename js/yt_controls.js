@@ -14,7 +14,7 @@ function onYouTubeIframeAPIReady() {
             events: {
                 onReady: function (event) {
                     isYouTubeReady = true;
-                    yt_players["youtube-video"].setVolume(30);
+                    yt_players["youtube-video"].setVolume(20);
                 }
             }
         });
