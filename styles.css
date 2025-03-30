@@ -249,6 +249,11 @@ a {
     gap: 5px;
 }
 
+.project-3-labels {
+    display: flex;
+    gap: 5px;
+}
+
 .project-4-labels {
     display: flex;
     gap: 5px;
@@ -332,6 +337,16 @@ a {
     background-color: #035faa;
     border-radius: 5px;
     color: #ffde57;
+    gap: 5px;
+    max-width: 50px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
+#sql {
+    background-color: #F29111;
+    border-radius: 5px;
+    color: #004150;
     gap: 5px;
     max-width: 50px;
     padding: 2px 2px;
