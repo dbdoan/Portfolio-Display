@@ -2,14 +2,11 @@
 
 ## About
 
-Utilizing my growing skillset to create a portfolio website utilizing vanilla html/css/js.
+This is my personal portfolio site built with vanilla HTML, CSS, and JavaScript. It's simple by design but serves as a space to showcase my growth as a developer.
 
-Project display is modular and pulls data from my self-hosted Strapi database.
-While the overall site is fundamentally beginner-esque and simple, I improved quite substantially.
-I am looking forward to improving this portfolio project as my growth continues.
+Projects are displayed dynamically using data from my self-hosted Strapi CMS, giving the site a modular and easily updatable structure. While the current version reflects my early learning phase, it's a work in progress — and I’m excited to evolve it as my skills continue to grow.
 
-## Future Additions
-[Updated: 03-14-25]
-~~- Add project previews to the project display bar~~ [scraped, did not look good]
-- Utiize Clash of Clans / Apex Legends API to display personal stats
-- Top navigation bar
+## Roadmap
+- [ ] Re-develop or improve About-Me portion
+- [ ] Re-develop project display slots to be more modularly
+- [ ] Add glow to hover on social media icons
