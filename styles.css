@@ -1,15 +1,52 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+    --clr-light: #FFF8DC;
+    --clr-dark: #212121;
+    --clr-primary: #61dafbaa;
+    --clr-secondary: #09d866;
+    --clr-accent: #61dafbaa;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+    --clr-accent: #ff6464;
+  }
+}
+
 body {
-    background-color: #121212;
-    backdrop-filter: blur(5px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(photos/houston.jpg);
-    background-repeat: no-repeat;
-    color: white;
+    background-color: var(--foreground);
+    margin: 0;
     display: flex;
     flex-direction: column;
     font-family: Arial, "Helvetica", sans-serif;
-    margin: 0;
-    min-height: 100vh;
+    height: 100%;
+    margin: 0 auto;
     padding: 0;
+    place-items: center;
+    /* min-width: 320px; */
+    min-height: 100vh;
 }
 
 /* ///////////////////////////////////////////////// */
@@ -168,10 +205,12 @@ body {
 
 .projects-display{
     margin-top: -25px;
+    max-width: 700px;
     display: flex;
     flex-grow: 1;
     justify-content: center;
     margin-bottom: auto;
+    width: 100%;
 }
 
 .project-header {
