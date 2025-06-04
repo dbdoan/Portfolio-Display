@@ -5,7 +5,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    /* background-color: #242424; */
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -43,6 +43,7 @@ body {
     font-family: Arial, "Helvetica", sans-serif;
     height: 100%;
     margin: 0 auto;
+    max-width: 44rem;
     padding: 0;
     place-items: center;
     /* min-width: 320px; */
@@ -58,7 +59,7 @@ body {
 
 #hello {
     display: inline;
-    padding-right: 5px;
+    min-height: 1.5em;
 }
 
 /* Blinking cursor animation */
@@ -84,12 +85,11 @@ body {
 .introduction {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .header {
     box-sizing: border-box;
-    max-width: 700px;
+    /* max-width: 40rem; */
     padding: 20px;
     width: 100%;
 }
@@ -107,11 +107,25 @@ body {
 
 }
 
+
 .icons {
-    gap: 5px;
-    margin-top: -5px;
+    /* gap: 5px; */
+    /* margin-top: -5px; */
     width: 100%;
 }
+
+.icons svg {
+    width: 3.8rem;
+    height: 3.8rem;
+    transition: all 0.3s ease;
+}
+
+.icons svg:hover {
+  filter: drop-shadow(0 0 2em var(--clr-accent));
+  transform: scale(1.1);
+}
+
+
 
 .uh-highlight {
     color: rgb(249, 108, 108);

@@ -6,7 +6,7 @@ let target_class = "#hello"
 let output_text = 'hello, my name is danny.';
 
 // Speed of typing animation
-let typing_speed = 60;
+let typing_speed = 50;
 
 // Time in milliseconds to display cursor at the end
 let end_display_ms = 2000; 

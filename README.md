@@ -8,5 +8,9 @@ Projects are displayed dynamically using data from my self-hosted Strapi CMS, gi
 
 ## Roadmap
 - [x] Re-develop or improve About-Me portion
-- [ ] Re-develop project display slots to be modular
-- [ ] Add glow to hover on social media icons
+- [ ] Re-develop project display slots to be modular; SQL-based server for slot filling
+- [ ] Rework social media icons; Replace current png's with svg's; Add hover glow
+- [ ] Rework all px to rem/% for better scalability between platforms
+- [ ] Update/Rework interests
+- [ ] Spotify Song Showcase w/ icons?
+- [ ] System Light/Dark mode color scheme improvements
