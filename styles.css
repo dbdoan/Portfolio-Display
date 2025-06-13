@@ -17,7 +17,12 @@
     --clr-dark: #212121;
     --clr-primary: #61dafbaa;
     --clr-secondary: #09d866;
-    --clr-accent: #61dafbaa;
+    --clr-accent1: #cfc290;
+    --clr-accent2: #3c3c3c;
+
+    --clr-glow:var(--clr-primary);
+
+    --clr-accent: var(--clr-accent2);
 
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
@@ -31,7 +36,8 @@ html {
   :root {
     --foreground: var(--clr-light);
     --background: var(--clr-dark);
-    --clr-accent: #ff6464;
+    --clr-accent: var(--clr-accent1);
+    --clr-glow: var(--clr-secondary);
   }
 }
 
@@ -83,6 +89,7 @@ body {
 /* top */
 
 .introduction {
+    color: var(--background);
     display: flex;
     justify-content: center;
 }
@@ -107,25 +114,32 @@ body {
 
 }
 
-
 .icons {
-    /* gap: 5px; */
-    /* margin-top: -5px; */
-    width: 100%;
+    align-items: center;
+    background-color: var(--clr-accent);
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    height: 0 auto;
+    width: 0 auto;
 }
 
-.icons svg {
-    width: 3.8rem;
-    height: 3.8rem;
+.icons a img {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.4rem;
     transition: all 0.3s ease;
 }
 
-.icons svg:hover {
-  filter: drop-shadow(0 0 2em var(--clr-accent));
+.icons a:hover img {
+  filter: drop-shadow(0 0 1.5em var(--clr-glow));
   transform: scale(1.1);
 }
-
-
 
 .uh-highlight {
     color: rgb(249, 108, 108);
@@ -137,6 +151,11 @@ body {
 
 /* ///////////////////////////////////////////////// */
 /* Clash */
+
+#base {
+    color: var(--background);
+}
+
 .hobbies-display {
     margin-top: -15px;
     display: flex;
@@ -235,7 +254,8 @@ body {
 }
 
 #showcase {
-    margin-bottom: 0px;
+    color: var(--background);
+    margin-bottom: .2rem;
 }
 
 .inner-block {
