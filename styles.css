@@ -70,17 +70,17 @@ body {
 
 /* Blinking cursor animation */
 @keyframes blink {
-    0% { border-color: white; }
+    0% { border-color: var(--background); }
     50% { border-color: transparent; }
-    100% { border-color: white; }
+    100% { border-color: var(--background); }
 }
 
 .no-blink {
-    border-right: 2px solid white;
+    border-right: .2rem solid var(--background);
 }
 
 .blink {
-    border-right: 2px solid white;
+    border-right: .2rem solid var(--background);
     animation: blink 0.7s step-end infinite;
 }
 
