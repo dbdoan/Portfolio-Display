@@ -448,6 +448,16 @@ body {
     width: 100%;
 }
 
+#placeholder {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    gap: 5px;
+    max-width: 90px;
+    padding: 2px 2px;
+    width: 100%;
+}
+
 /* ///////////////////////////////////////////////// */
 /* Responsive adjustments */
 @media (max-width: 600px) {
