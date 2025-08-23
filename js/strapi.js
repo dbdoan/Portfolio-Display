@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function fetchData() {
     // Too broke to renew domain, do not do this below for professional projects 
-    const url = 'http://80.78.23.103:1337/api/projects';
+    const url = 'https://api.dbdoan.dev/api/projects';
 
     fetch(url)
         .then(response => {
