@@ -236,7 +236,7 @@ body {
 /* middle */
 
 .projects-display{
-    margin-top: -25px;
+    margin-top: -1rem;
     max-width: 700px;
     display: flex;
     flex-grow: 1;
@@ -280,6 +280,7 @@ body {
 
 .button-text {
     color: var(--background);
+    font-size: 1.1rem;
 }
 /* ///////////////////////////////////////////////// */
 /* Footer */
