@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchData() {
-    // Reverse proxied Strapi server on VPS
-    const url = 'https://strapi.dbdoan.xyz/api/projects';
+    // Too broke to renew domain, do not do this below for professional projects 
+    const url = 'http://80.78.23.103:1337/api/projects';
 
     fetch(url)
         .then(response => {
