@@ -59,7 +59,6 @@ body {
     min-height: 100vh;
 }
 
-
 /* ///////////////////////////////////////////////// */
 /* introduction header */
 
@@ -290,7 +289,7 @@ body {
 
 .button-text {
     color: var(--background);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 /* ///////////////////////////////////////////////// */
 /* Footer */
