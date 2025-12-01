@@ -6,7 +6,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* ===== Theme Colors ===== */
+    /* Theme Colors  */
     --clr-light: #FFF8DC;
     --clr-dark: #212121;
     --clr-primary: #61dafbaa;
@@ -20,7 +20,7 @@
     --clr-sourceHLLM: rgb(235, 123, 123);
     --clr-sourceHLDM: rgb(122, 198, 255);
 
-    /* ===== Defaults ===== */
+    /* Defaults */
     --clr-glow: var(--clr-primary);
     --clr-accent: var(--clr-accent2);
     --foreground: var(--clr-dark);
@@ -28,6 +28,11 @@
     --lang: var(--clr-langDM);
     --uhHighLight: var(--clr-uhHLDM);
     --sourceHL: var(--clr-sourceHLDM);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 html {
@@ -47,24 +52,34 @@ html {
     }
 }
 
+/* LAYOUT */
 body {
-    align-items: center;
     background-color: var(--foreground);
-    display: flex;
     flex-direction: column;
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
-    justify-content: center;
     line-height: 1.5;
+}
+
+.main-content {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     max-width: 44rem;
     min-height: 100vh;
-    min-height: 100vh;
 }
 
-/* ///////////////////////////////////////////////// */
-/* introduction header */
-
+/* MAIN CONTENT */
+/* Introduction Header */
 .name {
     display: flex;
 }
@@ -73,7 +88,7 @@ body {
     display: inline;
 }
 
-/* Blinking cursor animation */
+/* Blinking Cursor */
 @keyframes blink {
     0% { border-color: var(--background); }
     50% { border-color: transparent; }
@@ -89,7 +104,6 @@ body {
     animation: blink 0.7s step-end infinite;
 }
 
-/* ///////////////////////////////////////////////// */
 /* Introduction container */
 .introduction {
     color: var(--background);
@@ -124,13 +138,11 @@ body {
     border-radius: 5px;
     display: flex;
     gap: 1rem;
+    height: 0 auto;
     margin: 0 auto;
-    /* justify-content: center;  */
-    /* padding: 0.2rem; */
     padding: 0.5rem;
     padding-left: 1rem;
     transition: all 0.3s ease;
-    height: 0 auto;
     width: 0 auto;
 }
 
@@ -168,7 +180,7 @@ body {
     color: var(--lang);
 }
 
-/* ///////////////////////////////////////////////// */
+/* Hobbies Display  */
 #base {
     color: var(--background);
     padding-top: 0;
@@ -263,8 +275,7 @@ body {
     background-color: rgba(119, 195, 253) !important;
 }
 
-/* ///////////////////////////////////////////////// */
-/* Showcase container */
+/* Photos Display */
 .projects-display{
     display: flex;
     /* flex-grow: 1; */
@@ -310,17 +321,17 @@ body {
     color: var(--background);
     font-size: 1rem;
 }
-/* ///////////////////////////////////////////////// */
+
 /* Footer */
 .footer {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     /* margin-top: auto;   */
-    width: 100%;
+    /* width: 100%; */
+    text-align: center;
     padding: 1rem 0;
 }
-
 
 .source {
     align-self: center;
@@ -337,7 +348,7 @@ body {
     color: var(--sourceHL);
 }
 
-/* ///////////////////////////////////////////////// */
+/* Labels  */
 .label {
     display: flex;
     justify-content: center;
@@ -484,8 +495,7 @@ body {
     width: 100%;
 }
 
-/* ///////////////////////////////////////////////// */
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 600px) {
     .description {
         font-size: 16px;
