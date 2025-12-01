@@ -54,9 +54,11 @@ body {
     flex-direction: column;
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
+    justify-content: center;
     line-height: 1.5;
     margin: 0 auto;
     max-width: 44rem;
+    min-height: 100vh;
     min-height: 100vh;
 }
 
@@ -314,7 +316,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: auto;  
+    /* margin-top: auto;   */
     width: 100%;
     padding: 1rem 0;
 }
